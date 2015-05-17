@@ -38,6 +38,6 @@ function process() {
 
   css = css.replace(/(?:\r\n|\r|\n)/g, '');
 
-  var string = '/* == Thumbtack == */\nvar Thumbtack=function(){function e(){for(var e="'+html+'",n="'+css+'",t=window.location!=window.parent.location?document.referrer:document.location,o=["/pen/","/details/","/full/","/debug/","/live/","/collab/","/professor/","/pres/","embed"],r=!0,a=0;a<o.length;a++)-1!==t.indexOf(o[a])&&(r=!1);r&&(document.body.insertAdjacentHTML("afterbegin",e),document.head.insertAdjacentHTML("afterbegin",n))}return e()}();\n/* == End Thumbtack == */';
+  var string = '/* == Thumbtack == */\nvar Thumbtack=function(){function e(){for(var e="'+html+'",n="'+css+'",t=window.location!=window.parent.location?document.referrer:document.location,o=["/pen/","/details/","/full/","/debug/","/live/","/collab/","/professor/","/pres/","/embed/"],r=!0,a=0;a<o.length;a++)-1!==t.indexOf(o[a])&&(r=!1);r&&(document.body.insertAdjacentHTML("afterbegin",e),document.head.insertAdjacentHTML("afterbegin",n))}return e()}();\n/* == End Thumbtack == */';
   output.getDoc().setValue(string);
 }
