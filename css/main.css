@@ -20,7 +20,7 @@
 
 body {
   position: relative;
-  margin: 0;
+  margin: 0; height: 100vh;
   background: #efefef;
   overflow-x: hidden;
 }
@@ -50,6 +50,16 @@ header h2 {
   font-size: 20px;
   font-weight: normal;
   letter-spacing: 2px;
+}
+
+.tutorial {
+  margin: 15px 0 0 0;
+  width: 100%;
+  font-family: 'Source Code Pro';
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
 }
 
 #Container {

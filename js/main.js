@@ -14,7 +14,6 @@ var output = CodeMirror.fromTextArea(document.getElementById("OUTeditor"), {
   lineNumbers: true,
   mode:  "javascript",
   theme: "base16-light",
-  lint: false,
   lineWrapping: true
 });
 
