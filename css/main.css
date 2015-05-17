@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/SourceSansPro-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('../assets/fonts/SourceCodePro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Playball';
+  src: url('../assets/fonts/Playball-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../assets/fonts/Oswald-Regular.ttf');
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background: #efefef;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 75px;
+  line-height: 75px;
+  background: #7986CB;
+  color: #fff;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0 0 0 25px; font-weight: normal;
+  font-family: 'Oswald';
+  letter-spacing: 2px;
+  font-size: 28px;
+  text-align: center;
+}
+
+header h2 {
+  display: inline-block;
+  float: right;
+  margin: 0 25px 0 0;
+  font-family: 'Playball';
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+#Container {
+  position: relative;
+  top: 15px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.codeInput {
+  display: inline-block;
+  min-width: 600px;
+  width: calc(50% - 50px);
+  margin: 15px auto 15px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  background: #444;
+  color: #eee;
+  font-size: 18px;
+  font-family: 'Source Sans Pro';
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  display: inline-block;
+  resize: none;
+}
+
+.CodeMirror pre {
+  font-size: 15px;
+  font-family: 'Source Code Pro';
+}
+
+.output {
+  min-width: 600px;
+  width: calc(50% - 50px);
+  margin: 15px auto;
+  overflow: hidden;
+}
+
+.code {
+  width: 100%;
+  border: none;
+  padding: none;
+  outline: none;
+  margin: 0;
+
+  height: 330px;
+}
+
+button {
+  outline: none;
+  border: none;
+  min-width: 600px;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  cursor: pointer;
+  font-size: 20px;
+  background: #81C784;
+  color: #eee;
+  font-family: 'Oswald';
+}
+
+.frameWrapper {
+  min-width: 600px;
+  width: calc(50% - 50px);
+  display: inline-block;
+  position: relative;
+  margin: 15px auto 30px auto;
+}
+
+.frameWrapper:after {
+  padding-top: 46.25%;
+  display: block;
+  content: '';
+}
+
+.result {
+  border: none;
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 100%; height: 100%;
+  max-height: 512px;
+}

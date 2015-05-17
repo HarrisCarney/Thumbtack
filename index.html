@@ -1,0 +1,47 @@
+<!Doctype html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/codemirror.css">
+  <link rel="stylesheet" type="text/css" href="css/base16-light.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Thumbtack</title>
+</head>
+
+<body>
+  <header>
+    <h1>Thumbtack</h1>
+    <h2>Thumbnails for CodePen</h2>
+  </header>
+
+  <div id="Container">
+    <div class="codeInput">
+      <label for="HTMLeditor">HTML</label>
+      <textarea name="HTMLeditor" id="HTMLeditor"></textarea>
+    </div>
+
+    <div class="codeInput">
+      <label for="CSSeditor">CSS</label>
+      <textarea name="CSSeditor" id="CSSeditor"></textarea>
+    </div>
+
+    <div class="output">
+      <button onclick="submit();">Get Code!</button>
+      <textarea id="OUTeditor" readonly="true"></textarea>
+    </div>
+
+    <div class="frameWrapper">
+      <iframe class="result"></iframe>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/codemirror.js"></script>
+  <script type="text/javascript" src="mode/xml/xml.js"></script>
+  <script type="text/javascript" src="mode/css/css.js"></script>
+  <script type="text/javascript" src="mode/javascript/javascript.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+
