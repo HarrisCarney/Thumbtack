@@ -38,7 +38,7 @@ function process() {
 
   css = css.replace(/(?:\r\n|\r|\n)/g, '');
 
-  var string = 'var Thumbtack = (function(){function Thumbtack(){for(var url=window.location!=window.parent.location?document.referrer:document.location,links=["/pen/","/details/","/full/","/debug/","/live/","/collab/","/professor/","/pres/"],active=!0,css="' + css + '",html="' + html + '",increment=0;increment<links.length;increment++)-1!==url.indexOf(links[increment])&&(active=!1);active&&(document.body.insertAdjacentHTML("afterbegin",html),document.head.insertAdjacentHTML("afterbegin",css));} return Thumbtack();})();'
+  var string = '/* == Thumbtack == */ \n var Thumbtack = (function(){function Thumbtack(){for(var url=window.location!=window.parent.location?document.referrer:document.location,links=["/pen/","/details/","/full/","/debug/","/live/","/collab/","/professor/","/pres/"],active=!0,css="' + css + '",html="' + html + '",increment=0;increment<links.length;increment++)-1!==url.indexOf(links[increment])&&(active=!1);active&&(document.body.insertAdjacentHTML("afterbegin",html),document.head.insertAdjacentHTML("afterbegin",css));} return Thumbtack();})(); \n /* == End Thumbtack == */';
 
   output.getDoc().setValue(string);
 }
