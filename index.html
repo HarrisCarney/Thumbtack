@@ -6,16 +6,16 @@
   <link rel="stylesheet" type="text/css" href="css/codemirror.css">
   <link rel="stylesheet" type="text/css" href="css/base16-light.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="viewport" content="initial-scale=1">
   <title>Thumbtack</title>
 </head>
 
 <body>
   <header>
-    <h1>Thumbtack</h1>
-    <h2>Thumbnails for Codepen</h2>
+    <div class="tutorial">
+      <p>Create a thumbnail in HTML/CSS. Click 'Generate'. Then place the generated script in the Javascript tab on Codepen!</p>
+    </div>
   </header>
-
-  <div class="tutorial">Throw in some HTML/CSS. Click 'Get Code!'. Put the script at the top of the Javascript tab on Codepen!</div>
 
   <div id="Container">
     <div class="codeInput">
@@ -28,8 +28,8 @@
       <textarea name="CSSeditor" id="CSSeditor"></textarea>
     </div>
 
-    <div class="output">
-      <button onclick="submit();">Get Code!</button>
+    <div class="codeOutput">
+      <button onclick="submit();">Generate!</button>
       <textarea id="OUTeditor" readonly="true"></textarea>
     </div>
 
