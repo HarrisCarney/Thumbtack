@@ -67,6 +67,7 @@ header h2 {
   top: 15px;
   width: 100vw;
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
 }
 
