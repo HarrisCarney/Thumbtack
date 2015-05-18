@@ -27,7 +27,7 @@ body {
 
 header {
   width: 100vw;
-  height: 75px;
+  height: 60px;
   background: #7986CB;
   position: relative;
 }
@@ -35,7 +35,7 @@ header {
 .tutorial {
   position: absolute;
   width: 100%;
-  height: 75px;
+  height: 60px;
   display: table;
 }
 
@@ -44,6 +44,7 @@ header {
   vertical-align: middle;
   text-align: center;
 
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   font-family: 'Courgette';
   color: #fff;
 }
@@ -61,7 +62,7 @@ header {
 .codeInput {
   min-width: 360px;
   width: calc(50% - 50px);
-  margin: 15px auto 15px auto;
+  margin: 12px auto 12px auto;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -100,7 +101,7 @@ label button {
   display: inline-block;
   min-width: 360px;
   width: calc(50% - 50px);
-  margin: 15px auto 15px auto;
+  margin: 12px auto 12px auto;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -123,11 +124,11 @@ label button {
   width: calc(50% - 50px);
   display: inline-block;
   position: relative;
-  margin: 15px auto 15px auto;
+  margin: 12px auto auto auto;
 }
 
 .frameWrapper:after {
-  padding-top: 46.25%;
+  padding-top: 56.25%;
   display: block;
   content: '';
 }
@@ -138,5 +139,4 @@ label button {
   margin: auto;
   top: 0; bottom: 0; left: 0; right: 0;
   width: 100%; height: 100%;
-  max-height: 512px;
 }
