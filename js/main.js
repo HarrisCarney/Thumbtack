@@ -32,6 +32,7 @@ function generate()
   var css = '<style>' + document.getElementById('CSSeditor').value + '</style>';
 
   html = html.replace(/["]/g, "'");
+  html = html.replace(/(?:\r\n|\r|\n)/g, '');
   css = css.replace(/["]/g, "'");
   css = css.replace(/(?:\r\n|\r|\n)/g, '');
 
