@@ -20,17 +20,21 @@
 
   <div id="Container">
     <div class="codeInput">
-      <label for="HTMLeditor">HTML</label>
+      <label for="HTMLeditor">HTML
+        <button onclick="clearEditor('html')">clear</button>
+      </label>
       <textarea name="HTMLeditor" id="HTMLeditor"></textarea>
     </div>
 
     <div class="codeInput">
-      <label for="CSSeditor">CSS</label>
+      <label for="CSSeditor">CSS
+        <button onclick="clearEditor('css')">clear</button>
+      </label>
       <textarea name="CSSeditor" id="CSSeditor"></textarea>
     </div>
 
     <div class="codeOutput">
-      <button onclick="submit();">Generate!</button>
+      <button onclick="generate();" class="generate">Generate!</button>
       <textarea id="OUTeditor" readonly="true"></textarea>
     </div>
 
