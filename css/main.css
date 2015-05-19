@@ -45,7 +45,6 @@ header {
   vertical-align: middle;
   text-align: center;
 
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
   font-family: 'Courgette';
   color: #fff;
 }
@@ -58,6 +57,18 @@ header {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-flex-direction: row;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    display: none;
+  }
+
+  #Container {
+    top: 0;
+    -webkit-flex-direction: column;
+  }
 }
 
 .codeInput {
