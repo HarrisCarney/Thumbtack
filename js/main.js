@@ -1,13 +1,15 @@
 var HTMLeditor = CodeMirror.fromTextArea(document.getElementById("HTMLeditor"), {
   lineNumbers: true,
   mode:  "xml",
-  theme: "base16-light"
+  theme: "base16-light",
+  tabSize: 2
 });
 
 var CSSeditor = CodeMirror.fromTextArea(document.getElementById("CSSeditor"), {
   lineNumbers: true,
   mode:  "css",
-  theme: "base16-light"
+  theme: "base16-light",
+  tabSize: 2
 });
 
 var output = CodeMirror.fromTextArea(document.getElementById("OUTeditor"), {
